@@ -1,0 +1,13 @@
+spring:
+  servlet:
+    multipart:
+      maxFileSize: 1000MB
+      maxRequestSize: 1000MB
+# minio的9000和9001要区分开：
+# 默认9000是api的端口和9001是网页版，可以自己指定端口
+minio:
+  endpoint: http://127.0.0.1:9000 #Minio服务所在地址
+  bucketName: test #存储桶名称
+  accessKey: ZECZCuUAQCkGPxbJ #访问的key
+  secretKey: 4v3jsuAGpVlJDIfOKOFwNIJ96D7FKo90 #访问的秘钥
+
